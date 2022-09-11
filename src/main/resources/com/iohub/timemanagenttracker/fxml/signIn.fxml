@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="parent" prefHeight="600.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iohub.timemanagenttracker.controller.SIgnUpController">
+   <center>
+      <GridPane alignment="CENTER" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="fillB" stylesheets="@../css/authentication.css" GridPane.hgrow="NEVER">
+               <children>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="620.0" styleClass="left" stylesheets="@../css/authentication.css" />
+               </children>
+            </HBox>
+            <VBox fx:id="content_area" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="right" stylesheets="@../css/authentication.css" GridPane.columnIndex="1">
+               <children>
+                  <Pane prefHeight="341.0" prefWidth="600.0">
+                     <children>
+                        <HBox prefHeight="340.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/18">
+                           <padding>
+                              <Insets left="70.0" />
+                           </padding>
+                           <children>
+                              <VBox prefHeight="353.0" prefWidth="468.0" spacing="15.0">
+                                 <children>
+                                    <Label styleClass="signuplbl" stylesheets="@../css/authentication.css" text="Sign In ">
+                                       <font>
+                                          <Font name="Poppins Bold" size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox prefHeight="24.0" prefWidth="521.0">
+                                       <children>
+                                          <Label prefHeight="24.0" prefWidth="87.0" styleClass="signIn_lbl" stylesheets="@../css/authentication.css" text="New User? ">
+                                             <font>
+                                                <Font name="Poppins Regular" size="16.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets bottom="1.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label fx:id="btn_Sign_up" onMouseClicked="#signInHandler" prefHeight="24.0" prefWidth="70.0" styleClass="signIn_lbl_link" stylesheets="@../css/authentication.css" text="SignUp">
+                                             <font>
+                                                <Font name="Poppins Regular" size="16.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets bottom="1.0" />
+                                             </padding>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                       <children>
+                                          <TextField fx:id="email" promptText="Email" styleClass="txtInput" stylesheets="@../css/authentication.css">
+                                             <padding>
+                                                <Insets bottom="15.0" left="10.0" top="15.0" />
+                                             </padding>
+                                          </TextField>
+                                          <PasswordField fx:id="password" prefHeight="26.0" prefWidth="300.0" promptText="Password" styleClass="txtInput" stylesheets="@../css/authentication.css">
+                                             <padding>
+                                                <Insets bottom="15.0" left="10.0" top="15.0" />
+                                             </padding>
+                                          </PasswordField>
+                                          <Label styleClass="forgetPass" stylesheets="@../css/authentication.css" text="Foget Password ?" />
+                                          <MFXButton fx:id="btn_login" onMouseClicked="#loginHandler" prefHeight="27.0" prefWidth="467.0" styleClass="btn" stylesheets="@../css/authentication.css" text="Login">
+                                             <padding>
+                                                <Insets bottom="15.0" top="15.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </MFXButton>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>

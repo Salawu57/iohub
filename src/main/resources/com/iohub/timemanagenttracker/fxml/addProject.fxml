@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXDatePicker?>
+<?import io.github.palexdev.materialfx.controls.MFXFilterComboBox?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefWidth="1158.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iohub.timemanagenttracker.controller.AddProjectController">
+   <children>
+      <ScrollPane fitToWidth="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="1156.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="130.0">
+                     <children>
+                        <Label styleClass="projectLbl" stylesheets="@../css/project.css" text="Project Form" VBox.vgrow="NEVER" />
+                        <AnchorPane prefWidth="888.0" styleClass="projectDetailPanel" stylesheets="@../css/project.css">
+                           <VBox.margin>
+                              <Insets top="35.0" />
+                           </VBox.margin>
+                           <children>
+                              <AnchorPane layoutX="3.0" layoutY="3.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="65.0" prefWidth="974.0" styleClass="btnControlContainer" stylesheets="@../css/project.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="65.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Label styleClass="addProjectLbl" stylesheets="@../css/project.css" text="Add Project" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutY="2.0" prefHeight="65.0" prefWidth="200.0" spacing="15.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" onMouseClicked="#goTo" stylesheets="@../css/project.css" text="Cancel">
+                                             <styleClass>
+                                                <String fx:value="btn" />
+                                                <String fx:value="btnCancel" />
+                                             </styleClass>
+                                          </Button>
+                                          <Button mnemonicParsing="false" onMouseClicked="#addProject" stylesheets="@../css/project.css" text="Save">
+                                             <styleClass>
+                                                <String fx:value="btn" />
+                                                <String fx:value="btnSave" />
+                                             </styleClass>
+                                          </Button>
+                                       </children>
+                                       <padding>
+                                          <Insets right="20.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
+                              <VBox layoutX="3.0" layoutY="75.0" prefWidth="975.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="74.0">
+                                 <children>
+                                    <Pane prefWidth="754.0">
+                                       <children>
+                                          <Label layoutY="21.0" styleClass="txtlbl" stylesheets="@../css/project.css" text="Project Name" />
+                                          <TextField fx:id="projectName" layoutY="52.0" prefWidth="506.0" styleClass="txtProjectName" stylesheets="@../css/project.css">
+                                             <padding>
+                                                <Insets bottom="12.0" left="10.0" top="12.0" />
+                                             </padding>
+                                          </TextField>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefWidth="742.0">
+                                       <children>
+                                          <Label styleClass="txtlbl" stylesheets="@../css/project.css" text="Estimated Timeline in Hours" />
+                                          <TextField fx:id="estimatedTimeline" layoutY="25.0" prefHeight="31.0" prefWidth="506.0" styleClass="txtProjectName" stylesheets="@../css/project.css">
+                                             <padding>
+                                                <Insets bottom="12.0" left="10.0" top="12.0" />
+                                             </padding>
+                                          </TextField>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="30.0" layoutY="147.0" prefWidth="742.0">
+                                       <children>
+                                          <Label layoutY="-11.0" styleClass="txtlbl" stylesheets="@../css/project.css" text="Expected Due Date" />
+                                          <MFXDatePicker fx:id="dueDate" alignment="TOP_LEFT" layoutY="17.0" prefWidth="506.0" styleClass="txtProjectName" stylesheets="@../css/project.css">
+                                             <padding>
+                                                <Insets bottom="8.0" left="10.0" top="8.0" />
+                                             </padding>
+                                          </MFXDatePicker>
+                                       </children>
+                                    </Pane>
+                                    <MFXFilterComboBox fx:id="member" prefWidth="506.0" styleClass="txtProjectName" stylesheets="@../css/project.css">
+                                       <padding>
+                                          <Insets bottom="11.0" left="10.0" top="-6.0" />
+                                       </padding>
+                                    </MFXFilterComboBox>
+                                    <VBox fx:id="membersContainer" prefWidth="100.0" spacing="20.0" visible="false">
+                                       <VBox.margin>
+                                          <Insets top="-25.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <Pane prefWidth="928.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefWidth="506.0" spacing="10.0" styleClass="privacy" stylesheets="@../css/project.css">
+                                             <children>
+                                                <Pane prefHeight="47.0" prefWidth="46.0" styleClass="padLockIconBg" stylesheets="@../css/project.css" HBox.hgrow="NEVER">
+                                                   <children>
+                                                      <ImageView fitHeight="23.0" fitWidth="17.0" layoutX="12.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../img/lock.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </Pane>
+                                                <Label text="We keep your data private and never share it with third-parties." />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </Pane>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="11.0" left="20.0" right="20.0" top="-6.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="90.0" right="90.0" />
+               </padding>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

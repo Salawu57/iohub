@@ -1,0 +1,59 @@
+
+@import '../fonts/Fonts.css';
+@import 'MFXColors.css';
+@import 'colors.css'
+
+.header-label {
+	-fx-font-family: 'Poppins Bold';
+	-fx-font-size: 54;
+	-fx-text-fill: -mfx-text-he;
+}
+
+.header-label .text {
+	-fx-font-smoothing-type: lcd;
+}
+
+.dash-header-label {
+	-fx-font-family: 'Poppins SemiBold';
+	-fx-font-size: 34;
+	-fx-text-fill: -mfx-text-he;
+}
+
+.sub-header-label {
+	-fx-font-family: 'Poppins SemiBold';
+	-fx-font-size: 14;
+	-fx-text-fill: -mfx-text-he;
+}
+
+.sub-header-label .text {
+	-fx-font-smoothing-type: lcd;
+}
+
+.grid-pane {
+	-fx-background-color: transparent;
+}
+
+.grid-background {
+	-fx-background-color: white;
+	-fx-background-radius: 10;
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.12, -1.0, 2.0);
+}
+.icon-background {
+	-fx-background-color: #E7F2FF;
+	-fx-background-radius: 10;
+}
+
+.outline-button {
+	-fx-background-color: transparent;
+	-fx-border-color: -weking-blue;
+	-fx-border-radius: 3;
+
+	-fx-text-fill: -weking-blue;
+}
+
+.outline-button:hover,
+.outline-button:focused {
+	-fx-background-color: -weking-blue;
+	-fx-text-fill: white;
+}
+

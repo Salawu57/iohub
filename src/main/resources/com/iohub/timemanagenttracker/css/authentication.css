@@ -1,0 +1,100 @@
+@import '../fonts/Fonts.css';
+@import 'MFXColors.css';
+@import 'colors.css'
+
+.parent{
+-fx-background-color: #f1f2f7;
+}
+
+.container{
+-fx-background-color: #FFF;
+}
+
+.top{
+-fx-background-color: #FFF;
+-fx-border-color: transparent transparent #f7f7f7 transparent;
+}
+
+.left{
+-fx-background-color: #f7f7f7;
+-fx-background-image:url(../img/loginImg.png);
+-fx-background-size:contain;
+-fx-background-repeat:no-repeat;
+-fx-background-position:center;
+-fx-background-size:100% 100%;
+}
+
+.fillB{
+-fx-background-color: #f7f7f7;
+}
+
+.img{
+-fx-background-color: #FFF;
+}
+
+.right{
+-fx-background-color: #FFF;
+
+}
+.rightpanel{
+-fx-background-color: #005BC5;
+ fx-border-color: blue;
+}
+
+.signuplbl{
+-fx-font-family: 'Poppins Bold';
+-fx-font-size: 24px;
+}
+
+.existing_Acct_lbl{
+-fx-font-family: 'Poppins Regular';
+-fx-font-size: 16px;
+}
+
+.existing_Acct_lbl:hover{
+-fx-text-fill: #005BC5;
+}
+
+.signIn_lbl{
+-fx-font-family: 'Poppins Regular';
+-fx-font-size: 16px;
+}
+
+.signIn_lbl_link{
+-fx-font-family: 'Poppins Regular';
+-fx-font-size: 16px;
+}
+
+.signIn_lbl_link:hover{
+-fx-text-fill: #005BC5;
+}
+
+.txtInput{
+-fx-border-color: #005BC5;
+-fx-border-radius: 0 0 0 0;
+-fx-background-radius: 0 0 0 0;
+-fx-font-family: 'Poppins Regular';
+-fx-font-size: 18px;
+}
+
+.btn{
+-fx-font-family: 'Poppins Medium';
+-fx-font-size: 18px;
+-fx-background-color: #005BC5;
+-fx-border-radius: 0 0 0 0;
+-fx-background-radius: 0 0 0 0;
+-fx-text-fill: #FFF;
+}
+
+.btn:hover{
+-fx-background-color: transparent;
+-fx-border-width: 2px;
+-fx-border-style: solid;
+-fx-border-color: #005BC5;
+-fx-text-fill: #005BC5;
+}
+
+.forgetPass{
+-fx-font-family: 'Poppins Regular';
+-fx-font-size: 14px;
+}

@@ -1,0 +1,132 @@
+@import '../fonts/Fonts.css';
+@import 'MFXColors.css';
+@import 'colors.css'
+
+
+.projectLbl{
+-fx-font-family:'Poppins Bold';
+-fx-font-size:20px;
+}
+
+.projectDetailPanel{
+-fx-background-color: -mfx-white;
+-fx-border-radius: 10 10 10 10;
+-fx-border-color: #CFD8DC;
+-fx-border-width:1;
+-fx-background-radius: 10 10 10 10;
+}
+
+.lineProject{
+-fx-stroke:#CFD8DC;
+}
+
+.btnControlContainer{
+ -fx-border-color: transparent transparent #CFD8DC transparent;
+-fx-border-width:1;
+}
+
+.addProjectLbl{
+-fx-font-family:'Poppins Regular';
+-fx-font-size:18px;
+}
+
+.btn{
+-fx-font-family:'Poppins Regular';
+-fx-font-size:18px;
+}
+
+.btnSave, btnAdd{
+-fx-text-fill: -mfx-white;
+-fx-background-color: #2589FF;
+-fx-border-radius: 5 5 5 5;
+-fx-border-color: #2589FF;
+-fx-background-radius: 5 5 5 5;
+}
+
+.btnAdd{
+-fx-font-size:14px;
+-fx-background-color:#005BC5;
+-fx-font-family:'Poppins Bold';
+}
+
+.btnCancel{
+-fx-background-color: -mfx-white;
+-fx-border-radius: 5 5 5 5;
+-fx-border-color: #CFD8DC;
+-fx-border-width:1;
+-fx-background-radius: 5 5 5 5;
+
+}
+
+.txtProjectName{
+-fx-border-color: #CFD8DC;
+-fx-border-radius: 0 0 0 0;
+-fx-background-radius: 0 0 0 0;
+-fx-font-family: 'Poppins Regular';
+-fx-font-size: 14px;
+}
+
+.txtlbl{
+-fx-font-family: 'Poppins Regular';
+-fx-font-size: 16px;
+}
+
+.privacy{
+-fx-background-color:#ECF5F9;
+-fx-border-radius: 5 5 5 5;
+-fx-background-radius: 5 5 5 5;
+-fx-font-family: 'Poppins Regular';
+-fx-border-color: transparent;
+}
+
+.padLockIconBg{
+-fx-background-color:rgba(0, 0, 0, 0.05);
+}
+
+.title{
+-fx-font-family: 'Poppins Regular';
+-fx-font-size: 25px;
+}
+
+.calendarInput{
+-fx-font-family: 'Poppins Medium';
+-fx-font-size: 18px;
+}
+
+.btnFilter{
+-fx-background-color: -mfx-white;
+-fx-border-radius: 5 5 5 5;
+-fx-border-color: #CFD8DC;
+-fx-border-width:1;
+-fx-font-family: 'Poppins Regular';
+-fx-font-size: 18px;
+-fx-background-radius: 5 5 5 5;
+}
+
+.titleLbl{
+-fx-font-family: 'Poppins Bold';
+-fx-font-size: 25px;
+}
+
+.table_view_Header{
+-fx-background-color: -mfx-white;
+}
+
+.table_view_Header .labelTxt{
+-fx-font-family: 'Poppins Bold';
+-fx-font-size: 14px;
+}
+
+.rows{
+-fx-background-color:#F7F6FE;
+-fx-font-family: 'Poppins Medium';
+-fx-font-size: 14px;
+}
+.nameLbl{
+-fx-font-family: 'Poppins Bold';
+-fx-font-size: 16px;
+}
+.roleLbl{
+-fx-font-family: 'Poppins Regular';
+-fx-font-size: 14px;
+}

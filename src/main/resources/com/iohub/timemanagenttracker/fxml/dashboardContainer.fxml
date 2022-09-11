@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1010.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iohub.timemanagenttracker.controller.DashboardController">
+   <left>
+      <AnchorPane prefHeight="1010.0" prefWidth="350.0" styleClass="sidebar" stylesheets="@../css/dashboard.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" layoutY="108.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="100.0" prefWidth="262.0">
+                     <children>
+                        <Pane prefHeight="132.0" prefWidth="262.0" styleClass="projectInfoContainer" stylesheets="@../css/dashboard.css">
+                           <VBox.margin>
+                              <Insets top="60.0" />
+                           </VBox.margin>
+                           <children>
+                              <HBox alignment="CENTER" layoutX="202.0" layoutY="49.0" prefHeight="35.0" prefWidth="37.0" styleClass="dropdownContainer" stylesheets="@../css/dashboard.css">
+                                 <children>
+                                    <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/carret.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Label layoutX="20.0" layoutY="22.0" styleClass="workspaceLbl" stylesheets="@../css/dashboard.css" text="Workspace" />
+                              <Label layoutX="22.0" layoutY="57.0" prefWidth="138.0" styleClass="client" stylesheets="@../css/dashboard.css" text="Fintech Client Account" wrapText="true" />
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="200.0" prefWidth="262.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <VBox prefHeight="708.0" prefWidth="262.0" spacing="20.0">
+                                 <children>
+                                    <Pane onMouseClicked="#loadDashboard" prefHeight="80.0" prefWidth="269.0" styleClass="menu_item, active" stylesheets="@../css/dashboard.css">
+                                       <VBox.margin>
+                                          <Insets top="60.0" />
+                                       </VBox.margin>
+                                       <children>
+                                          <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="26.0" layoutY="27.0" onMouseClicked="#loadDashboard" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/dashboardIcon.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="86.0" layoutY="27.0" onMouseClicked="#loadDashboard" stylesheets="@../css/dashboard.css" text="Dashboard">
+                                             <styleClass>
+                                                <String fx:value="menu_item_lbl" />
+                                                <String fx:value="active" />
+                                             </styleClass>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane onMouseClicked="#loadProject" prefHeight="80.0" prefWidth="269.0" styleClass="menu_item" stylesheets="@../css/dashboard.css">
+                                       <children>
+                                          <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="33.0" layoutY="33.0" onMouseClicked="#loadProject" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/folder.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="86.0" layoutY="27.0" onMouseClicked="#loadProject" styleClass="menu_item_lbl" stylesheets="@../css/dashboard.css" text="Projects" />
+                                       </children>
+                                    </Pane>
+                                    <Pane onMouseClicked="#loadTimesheet" prefHeight="80.0" prefWidth="269.0" styleClass="menu_item" stylesheets="@../css/dashboard.css">
+                                       <children>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="30.0" layoutY="29.0" onMouseClicked="#loadTimesheet" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/timer.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="86.0" layoutY="27.0" onMouseClicked="#loadTimesheet" styleClass="menu_item_lbl" stylesheets="@../css/dashboard.css" text="Timesheets" />
+                                       </children>
+                                    </Pane>
+                                    <Pane onMouseClicked="#loadActivity" prefHeight="80.0" prefWidth="269.0" styleClass="menu_item" stylesheets="@../css/dashboard.css">
+                                       <children>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="33.0" layoutY="28.0" onMouseClicked="#loadActivity" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/activity.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="86.0" layoutY="27.0" onMouseClicked="#loadActivity" styleClass="menu_item_lbl" stylesheets="@../css/dashboard.css" text="Activity" />
+                                       </children>
+                                    </Pane>
+                                    <Pane onMouseClicked="#loadMembers" prefHeight="80.0" prefWidth="269.0" styleClass="menu_item" stylesheets="@../css/dashboard.css">
+                                       <children>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="28.0" layoutY="27.0" onMouseClicked="#loadMembers" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/members.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="86.0" layoutY="27.0" onMouseClicked="#loadMembers" styleClass="menu_item_lbl" stylesheets="@../css/dashboard.css" text="Members" />
+                                       </children>
+                                    </Pane>
+                                    <Pane onMouseClicked="#loadSettings" prefHeight="80.0" prefWidth="269.0" styleClass="menu_item" stylesheets="@../css/dashboard.css">
+                                       <children>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="31.0" layoutY="31.0" onMouseClicked="#loadSettings" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/settings.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="86.0" layoutY="27.0" onMouseClicked="#loadSettings" styleClass="menu_item_lbl" stylesheets="@../css/dashboard.css" text="Settings" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <top>
+      <HBox prefHeight="110.0" styleClass="header" stylesheets="@../css/dashboard.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="110.0" prefWidth="351.0">
+               <children>
+                  <ImageView fitHeight="93.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/logos.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <GridPane prefHeight="110.0" prefWidth="916.0" HBox.hgrow="ALWAYS">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="324.0" minWidth="10.0" prefWidth="228.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="687.0" minWidth="10.0" prefWidth="407.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="304.0" minWidth="10.0" prefWidth="280.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="110.0" prefWidth="72.0" spacing="25.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/drawerIcon.png" />
+                           </image>
+                        </ImageView>
+                        <Label styleClass="lbl_dashboard" stylesheets="@../css/dashboard.css" text="Dashboard" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="110.0" prefWidth="443.0" GridPane.columnIndex="1">
+                     <children>
+                        <MFXTextField prefHeight="51.0" prefWidth="377.0" promptText="Search" styleClass="searchIput" stylesheets="@../css/dashboard.css">
+                           <padding>
+                              <Insets bottom="15.0" left="20.0" top="-10.0" />
+                           </padding>
+                        </MFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="110.0" prefWidth="214.0" spacing="20.0" GridPane.columnIndex="2">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/notification.png" />
+                           </image>
+                        </ImageView>
+                        <VBox alignment="CENTER_RIGHT" prefHeight="110.0" prefWidth="140.0">
+                           <children>
+                              <Label fx:id="profileName" styleClass="profileLbl" stylesheets="@../css/dashboard.css" text="Tobi Williams" />
+                              <Label fx:id="role" styleClass="roleLbl" stylesheets="@../css/dashboard.css" text="UX/UI Designer" />
+                           </children>
+                        </VBox>
+                        <ImageView fx:id="profileImg" fitHeight="56.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true" styleClass="imgPlacehoder">
+                           <image>
+                              <Image url="@../../../../default.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <AnchorPane fx:id="content_pane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

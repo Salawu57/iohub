@@ -1,0 +1,202 @@
+@import '../fonts/Fonts.css';
+@import 'MFXColors.css';
+@import 'colors.css'
+
+
+.sidebar{
+-fx-background-color: -mfx-white;
+}
+
+.header{
+-fx-background-color: -mfx-white;
+}
+
+.searchIput{
+-fx-background-radius: 30 30 30 30;
+-fx-border-color: transparent;
+-fx-font-family: 'Poppins Regular';
+-fx-font-size: 14px;
+-fx-background-color: rgba(239, 239, 239, 0.47);
+}
+
+.lbl_dashboard{
+-fx-font-family: 'Poppins Bold';
+-fx-font-size: 24px;
+}
+
+.imgPlacehoder{
+-fx-background-color: rgba(239, 239, 239, 0.47);
+}
+
+.profileLbl{
+-fx-font-family: 'Poppins Bold';
+-fx-font-size: 16px;
+}
+
+.roleLbl{
+-fx-font-family: 'Poppins Light';
+-fx-font-size: 14px;
+}
+
+.projectInfoContainer{
+-fx-background-color: #FFF;
+-fx-border-radius: 15 15 15 15;
+-fx-border-color: #AFAFAF;
+-fx-border-width:1;
+}
+
+.dropdownContainer{
+-fx-background-color:#E7F2FF;
+-fx-background-radius: 10 10 10 10;
+-fx-border-color: transparent;
+}
+
+.workspaceLbl{
+-fx-font-family: 'Poppins Regular';
+-fx-text-fill: #AFAFAF;
+}
+
+.client{
+-fx-font-family: 'Poppins Bold';
+-fx-font-size: 16px;
+}
+
+.menu_item{
+-fx-background-radius: 10 10 10 10;
+-fx-border-color: transparent;
+}
+
+
+.menu_item:hover{
+-fx-border-color: #005BC5;
+-fx-border-radius: 0 0 0 0;
+-fx-background-radius: 0 0 0 0;
+-fx-font-family: 'Poppins Medium';
+-fx-font-size: 18px;
+}
+
+.menu_item_lbl{
+-fx-font-family: 'Poppins Medium';
+-fx-font-size: 18px;
+}
+.menu_item_lbl:hover{
+-fx-text-fill: #005BC5;
+}
+
+
+.link{
+-fx-text-fill: #232323;
+}
+
+.active{
+-fx-background-color:#005BC5;
+-fx-text-fill: -mfx-white;
+}
+
+.placeholderTxt{
+-fx-font-family: 'Poppins Bold';
+-fx-font-size: 25px;
+}
+.day{
+-fx-font-family: 'Poppins Bold';
+-fx-font-size: 35px;
+}
+
+.time{
+-fx-font-family: 'Poppins Regular';
+-fx-font-size: 18px;
+}
+
+.startTimer, .weekly{
+-fx-background-color:-mfx-white;
+-fx-background-radius: 10 10 10 10;
+-fx-border-color: transparent;
+}
+
+.weeklyActivitiesLbl{
+-fx-font-family: 'Poppins Medium';
+-fx-font-size: 20px;
+}
+
+.iconContainer{
+-fx-background-color:#E7F2FF;
+-fx-background-radius: 10 10 10 10;
+-fx-border-color: transparent;
+}
+
+.startTimerLbl{
+-fx-font-family: 'Poppins Bold';
+-fx-font-size: 18px;
+}
+
+.workPercentage{
+-fx-font-family: 'Poppins Bold';
+-fx-font-size: 30px;
+}
+
+.memberActivityContainer{
+-fx-background-color: #FFF;
+-fx-border-radius: 15 15 15 15;
+-fx-border-color: #F1F1F1;
+-fx-border-width:1;
+}
+
+
+.btn{
+-fx-background-radius: 10 10 10 10;
+-fx-border-color: transparent;
+-fx-font-family: 'Poppins Medium';
+-fx-font-size: 14px;
+}
+
+.percentage{
+-fx-font-family: 'Poppins Medium';
+-fx-font-size: 14px;
+}
+
+.btnViewAll{
+-fx-background-color: #E7F2FF;
+}
+
+.btnAllRprimary{
+-fx-background-color: #005BC5;
+-fx-text-fill: -mfx-white;
+
+}
+
+
+.memberNameLbl{
+-fx-font-family: 'Poppins Bold';
+-fx-font-size: 16px;
+}
+
+.progress-bar > .bar {
+    -fx-padding:0;
+    -fx-background-insets: 0;
+    -fx-background-color: #2589FF;
+}
+
+.progress-bar > .track {
+   -fx-background-color: lightgray, white;
+   -fx-background-insets: 0, 1;
+}
+
+.memberHeadingLbl, .activityHeadingLbl{
+-fx-font-family: 'Poppins Medium';
+-fx-font-size: 16px;
+-fx-text-fill: #9A9A9A;
+
+}
+
+.projectDescription{
+-fx-font-family: 'Poppins Medium';
+-fx-font-size: 14px;
+}
+
+.projectTask{
+
+-fx-font-family: 'Poppins Regular';
+-fx-font-size: 12px;
+}
+
+

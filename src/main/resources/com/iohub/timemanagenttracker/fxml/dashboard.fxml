@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefWidth="1158.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane fitToWidth="true" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <content>
+          <AnchorPane>
+               <padding>
+                  <Insets bottom="15.0" left="30.0" right="30.0" top="40.0" />
+               </padding>
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label styleClass="day" stylesheets="@../css/dashboard.css" text="Today" />
+                              <Label styleClass="time" stylesheets="@../css/dashboard.css" text="Mon 22, 2022 | 10:00 AM" />
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="553.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" spacing="20.0" styleClass="startTimer" stylesheets="@../css/dashboard.css">
+                                 <children>
+                                    <Label styleClass="startTimerLbl" stylesheets="@../css/dashboard.css" text="Start Time Tracker" />
+                                    <ImageView fitHeight="64.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/start.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefWidth="200.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="140.0">
+                     <children>
+                        <VBox prefWidth="380.0" spacing="50.0" styleClass="weekly" stylesheets="@../css/dashboard.css" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER">
+                                 <children>
+                                    <HBox HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label styleClass="weeklyActivitiesLbl" stylesheets="@../css/dashboard.css" text="Weekly Activity" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <ImageView fitHeight="20.0" fitWidth="5.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/dot.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                 </children></HBox>
+                              <HBox alignment="CENTER_LEFT" prefWidth="200.0">
+                                 <children>
+                                    <VBox alignment="CENTER_LEFT" prefWidth="125.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label styleClass="workPercentage" stylesheets="@../css/dashboard.css" text="89%" VBox.vgrow="ALWAYS" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER_RIGHT">
+                                       <children>
+                                          <Pane prefHeight="80.0" prefWidth="80.0" styleClass="iconContainer" stylesheets="@../css/dashboard.css" VBox.vgrow="ALWAYS">
+                                             <children>
+                                                <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="22.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../img/direction.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                        <VBox prefWidth="380.0" spacing="50.0" styleClass="weekly" stylesheets="@../css/dashboard.css" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER">
+                                 <children>
+                                    <HBox HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label styleClass="weeklyActivitiesLbl" stylesheets="@../css/dashboard.css" text="Worked This Week" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <ImageView fitHeight="20.0" fitWidth="5.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/dot.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefWidth="200.0">
+                                 <children>
+                                    <VBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="125.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label styleClass="workPercentage" stylesheets="@../css/dashboard.css" text="40:00:05" VBox.vgrow="ALWAYS" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER_RIGHT">
+                                       <children>
+                                          <Pane prefHeight="80.0" prefWidth="80.0" styleClass="iconContainer" stylesheets="@../css/dashboard.css" VBox.vgrow="ALWAYS">
+                                             <children>
+                                                <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="23.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../img/time.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                        <VBox prefWidth="380.0" spacing="50.0" styleClass="weekly" stylesheets="@../css/dashboard.css" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER">
+                                 <children>
+                                    <HBox prefWidth="200.0">
+                                       <children>
+                                          <Label styleClass="weeklyActivitiesLbl" stylesheets="@../css/dashboard.css" text="Projects Completed" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <ImageView fitHeight="20.0" fitWidth="5.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/dot.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefWidth="200.0">
+                                 <children>
+                                    <VBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="125.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label styleClass="workPercentage" stylesheets="@../css/dashboard.css" text="07" VBox.vgrow="ALWAYS" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER_RIGHT">
+                                       <children>
+                                          <Pane prefHeight="80.0" prefWidth="80.0" styleClass="iconContainer" stylesheets="@../css/dashboard.css" VBox.vgrow="ALWAYS">
+                                             <children>
+                                                <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="23.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../img/work.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <GridPane hgap="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="370.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="554.0" />
+                      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="542.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+                    </rowConstraints>
+                     <children>
+                        <VBox spacing="20.0" styleClass="weekly" stylesheets="@../css/dashboard.css">
+                           <padding>
+                              <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                           </padding>
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <VBox HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label styleClass="weeklyActivitiesLbl" stylesheets="@../css/dashboard.css" text="Recent Activity" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <ImageView fitHeight="20.0" fitWidth="5.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/dot.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox styleClass="memberActivityContainer" stylesheets="@../css/dashboard.css">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" spacing="10.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/member.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label styleClass="memberNameLbl" stylesheets="@../css/dashboard.css" text="Rubik Sans" />
+                                       </children>
+                                    </HBox>
+                                    <VBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Button mnemonicParsing="false" stylesheets="@../css/dashboard.css" text="View All">
+                                             <padding>
+                                                <Insets bottom="8.0" left="20.0" right="20.0" top="8.0" />
+                                             </padding>
+                                             <styleClass>
+                                                <String fx:value="btnViewAll" />
+                                                <String fx:value="btn" />
+                                             </styleClass>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <TilePane hgap="10.0" prefColumns="3" prefRows="3">
+                                 <children>
+                                    <ImageView fitHeight="96.0" fitWidth="169.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/pic1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="93.0" fitWidth="147.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/pic1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="99.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/pic1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="99.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/pic1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="99.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/pic1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="99.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/pic1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </TilePane>
+                           </children>
+                        </VBox>
+                        <VBox spacing="20.0" styleClass="weekly" stylesheets="@../css/dashboard.css" GridPane.columnIndex="1">
+                           <padding>
+                              <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                           </padding>
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <VBox HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label styleClass="weeklyActivitiesLbl" stylesheets="@../css/dashboard.css" text="Projects " />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <ImageView fitHeight="20.0" fitWidth="5.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/dot.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox styleClass="memberActivityContainer" stylesheets="@../css/dashboard.css">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefWidth="142.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/folderbg.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label styleClass="memberNameLbl" stylesheets="@../css/dashboard.css" text="Project One" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Button mnemonicParsing="false" stylesheets="@../css/dashboard.css" text="00:40:00">
+                                             <padding>
+                                                <Insets bottom="8.0" left="20.0" right="20.0" top="8.0" />
+                                             </padding>
+                                             <styleClass>
+                                                <String fx:value="btnViewAll" />
+                                                <String fx:value="btn" />
+                                             </styleClass>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <ProgressBar prefHeight="5.0" progress="0.65" styleClass="progressBar" stylesheets="@../css/dashboard.css" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="61.0" prefWidth="129.0" styleClass="memberActivityContainer" stylesheets="@../css/dashboard.css">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefWidth="142.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/folderbg.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label styleClass="memberNameLbl" stylesheets="@../css/dashboard.css" text="Project Two" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Button mnemonicParsing="false" stylesheets="@../css/dashboard.css" text="00:40:00">
+                                             <padding>
+                                                <Insets bottom="8.0" left="20.0" right="20.0" top="8.0" />
+                                             </padding>
+                                             <styleClass>
+                                                <String fx:value="btnViewAll" />
+                                                <String fx:value="btn" />
+                                             </styleClass>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <ProgressBar prefHeight="5.0" progress="0.65" styleClass="progressBar" stylesheets="@../css/dashboard.css" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="61.0" prefWidth="129.0" styleClass="memberActivityContainer" stylesheets="@../css/dashboard.css">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="142.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/folderbg.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label styleClass="memberNameLbl" stylesheets="@../css/dashboard.css" text="Project Three" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Button mnemonicParsing="false" stylesheets="@../css/dashboard.css" text="00:40:00">
+                                             <padding>
+                                                <Insets bottom="8.0" left="20.0" right="20.0" top="8.0" />
+                                             </padding>
+                                             <styleClass>
+                                                <String fx:value="btnViewAll" />
+                                                <String fx:value="btn" />
+                                             </styleClass>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <ProgressBar prefHeight="5.0" progress="0.65" styleClass="progressBar" stylesheets="@../css/dashboard.css" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="61.0" prefWidth="129.0" styleClass="memberActivityContainer" stylesheets="@../css/dashboard.css">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefWidth="142.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/folderbg.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label styleClass="memberNameLbl" stylesheets="@../css/dashboard.css" text="Project Four" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Button mnemonicParsing="false" stylesheets="@../css/dashboard.css" text="00:40:00">
+                                             <padding>
+                                                <Insets bottom="8.0" left="20.0" right="20.0" top="8.0" />
+                                             </padding>
+                                             <styleClass>
+                                                <String fx:value="btnViewAll" />
+                                                <String fx:value="btn" />
+                                             </styleClass>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <ProgressBar prefHeight="5.0" progress="0.65" styleClass="progressBar" stylesheets="@../css/dashboard.css" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" stylesheets="@../css/dashboard.css">
+                                 <children>
+                                    <Button mnemonicParsing="false" stylesheets="@../css/dashboard.css" text="View All">
+                                       <styleClass>
+                                          <String fx:value="btn" />
+                                          <String fx:value="btnAllRprimary" />
+                                       </styleClass>
+                                       <padding>
+                                          <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </GridPane>
+                  <GridPane hgap="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="865.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="554.0" />
+                        <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="542.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+                     </rowConstraints>
+                     <children>
+                        <VBox spacing="20.0" styleClass="weekly" stylesheets="@../css/dashboard.css">
+                           <padding>
+                              <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                           </padding>
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <VBox HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label styleClass="weeklyActivitiesLbl" stylesheets="@../css/dashboard.css" text="Members" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <ImageView fitHeight="20.0" fitWidth="5.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/dot.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox>
+                                 <children>
+                                    <HBox prefWidth="240.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label styleClass="memberHeadingLbl" stylesheets="@../css/dashboard.css" text="Member Info" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" spacing="70.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label styleClass="memberHeadingLbl" stylesheets="@../css/dashboard.css" text="Today" />
+                                          <Label styleClass="memberHeadingLbl" stylesheets="@../css/dashboard.css" text="This Week" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <HBox styleClass="memberActivityContainer" stylesheets="@../css/dashboard.css">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" spacing="10.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/member.png" />
+                                             </image>
+                                          </ImageView>
+                                          <VBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="190.0" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Label styleClass="memberNameLbl" stylesheets="@../css/dashboard.css" text="John Ekeler" />
+                                                <Label prefWidth="169.0" styleClass="projectDescription" stylesheets="@../css/dashboard.css" text="Food Dashboard Design" />
+                                                <Label styleClass="projectTask" stylesheets="@../css/dashboard.css" text="Creating UI and Research" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" spacing="30.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Button mnemonicParsing="false" stylesheets="@../css/dashboard.css" text="00:40:00">
+                                             <padding>
+                                                <Insets bottom="8.0" left="20.0" right="20.0" top="8.0" />
+                                             </padding>
+                                             <styleClass>
+                                                <String fx:value="btnViewAll" />
+                                                <String fx:value="btn" />
+                                             </styleClass>
+                                          </Button>
+                                          <Button mnemonicParsing="false" stylesheets="@../css/dashboard.css" text="00:40:00">
+                                             <padding>
+                                                <Insets bottom="8.0" left="20.0" right="20.0" top="8.0" />
+                                             </padding>
+                                             <styleClass>
+                                                <String fx:value="btnViewAll" />
+                                                <String fx:value="btn" />
+                                             </styleClass>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox styleClass="memberActivityContainer" stylesheets="@../css/dashboard.css">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" spacing="10.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/member.png" />
+                                             </image>
+                                          </ImageView>
+                                          <VBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="190.0" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Label styleClass="memberNameLbl" stylesheets="@../css/dashboard.css" text="Rubik Sans" />
+                                                <Label prefWidth="169.0" styleClass="projectDescription" stylesheets="@../css/dashboard.css" text="Food Dashboard Design" />
+                                                <Label styleClass="projectTask" stylesheets="@../css/dashboard.css" text="Creating UI and Research" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" spacing="30.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Button mnemonicParsing="false" stylesheets="@../css/dashboard.css" text="00:40:00">
+                                             <padding>
+                                                <Insets bottom="8.0" left="20.0" right="20.0" top="8.0" />
+                                             </padding>
+                                             <styleClass>
+                                                <String fx:value="btnViewAll" />
+                                                <String fx:value="btn" />
+                                             </styleClass>
+                                          </Button>
+                                          <Button mnemonicParsing="false" stylesheets="@../css/dashboard.css" text="00:40:00">
+                                             <padding>
+                                                <Insets bottom="8.0" left="20.0" right="20.0" top="8.0" />
+                                             </padding>
+                                             <styleClass>
+                                                <String fx:value="btnViewAll" />
+                                                <String fx:value="btn" />
+                                             </styleClass>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox spacing="20.0" styleClass="weekly" stylesheets="@../css/dashboard.css" GridPane.columnIndex="1">
+                           <padding>
+                              <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                           </padding>
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <VBox HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label styleClass="weeklyActivitiesLbl" stylesheets="@../css/dashboard.css" text="Activity" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <ImageView fitHeight="20.0" fitWidth="5.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/dot.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label styleClass="activityHeadingLbl" stylesheets="@../css/dashboard.css" text="App Used/URL Visited" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label styleClass="activityHeadingLbl" stylesheets="@../css/dashboard.css" text="Time" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label styleClass="activityHeadingLbl" stylesheets="@../css/dashboard.css" text="Performance" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <HBox styleClass="memberActivityContainer" stylesheets="@../css/dashboard.css">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" spacing="10.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/folderbg.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label styleClass="memberNameLbl" stylesheets="@../css/dashboard.css" text="Webstorm" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Button mnemonicParsing="false" stylesheets="@../css/dashboard.css" text="00:40:00">
+                                             <padding>
+                                                <Insets bottom="8.0" left="20.0" right="20.0" top="8.0" />
+                                             </padding>
+                                             <styleClass>
+                                                <String fx:value="btnViewAll" />
+                                                <String fx:value="btn" />
+                                             </styleClass>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label styleClass="percentage" stylesheets="@../css/dashboard.css" text="85%" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="61.0" prefWidth="129.0" styleClass="memberActivityContainer" stylesheets="@../css/dashboard.css">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefWidth="142.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/folderbg.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label styleClass="memberNameLbl" stylesheets="@../css/dashboard.css" text="Project Two" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Button mnemonicParsing="false" stylesheets="@../css/dashboard.css" text="00:40:00">
+                                             <padding>
+                                                <Insets bottom="8.0" left="20.0" right="20.0" top="8.0" />
+                                             </padding>
+                                             <styleClass>
+                                                <String fx:value="btnViewAll" />
+                                                <String fx:value="btn" />
+                                             </styleClass>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label styleClass="percentage" stylesheets="@../css/dashboard.css" text="72%" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" stylesheets="@../css/dashboard.css">
+                                 <children>
+                                    <Button mnemonicParsing="false" stylesheets="@../css/dashboard.css" text="View All">
+                                       <styleClass>
+                                          <String fx:value="btn" />
+                                          <String fx:value="btnAllRprimary" />
+                                       </styleClass>
+                                       <padding>
+                                          <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
